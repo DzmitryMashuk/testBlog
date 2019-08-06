@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>test Blog</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@include('layouts.head')
 <body>
+<div id="app">
+    @include('layouts.header')
 
-@include('layouts.header')
-
-<div class="container">
-    @yield('content')
+    <main class="py-4">
+        <div class="container">
+            @yield('content')
+        </div>
+    </main>
 </div>
-
 </body>
 </html>

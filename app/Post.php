@@ -12,4 +12,13 @@ class Post extends Model
     {
         return 'slug';
     }
+
+    public function rules()
+    {
+        return [
+            'author'  => 'required|min:3',
+            'title'   => 'required',
+            'message' => 'required',
+        ];
+    }
 }

@@ -2,11 +2,11 @@
 
 @section('content')
     <div class="my-3">
-        <a href="/" class="btn btn-dark">Go Back</a>
+        <a href="/post" class="btn btn-dark">Go Back</a>
     </div>
 
     <form action="/post/{{$post->slug}}" method="post">
-        {{csrf_field()}}
+        @csrf
         {!! method_field('patch') !!}
         <input type="hidden" value="{{$post->author}}" name="author"/>
 

@@ -14,7 +14,7 @@ class PostsTableSeeder extends Seeder
     {
         DB::table('posts')->insert([
             [
-                'author'     => 'author1',
+                'author'     => 'Dima',
                 'title'      => 'title1',
                 'slug'       => 'title1',
                 'message'    => 'message1',
@@ -22,7 +22,7 @@ class PostsTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'author'     => 'author2',
+                'author'     => 'Dima',
                 'title'      => 'title2',
                 'slug'       => 'title2',
                 'message'    => 'message2',
@@ -30,7 +30,7 @@ class PostsTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'author'     => 'author3',
+                'author'     => 'Dima',
                 'title'      => 'title3',
                 'slug'       => 'title3',
                 'message'    => 'message3',
@@ -38,7 +38,7 @@ class PostsTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'author'     => 'author4',
+                'author'     => 'Dima',
                 'title'      => 'title4',
                 'slug'       => 'title4',
                 'message'    => 'message4',
